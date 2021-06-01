@@ -20,7 +20,7 @@ router.post('/add', function (req, res, next) {
   req.app.locals.db.collection('notes').insertOne(req.body)
     .then(results => {
       // console.log(results);
-      res.redirect('http://127.0.0.1:5500/frontend/index.html')
+      res.redirect('https://stinas-diary.herokuapp.com/')
     })
 
 
