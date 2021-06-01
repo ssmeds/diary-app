@@ -1,0 +1,146 @@
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 1.1rem;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+    background: rgb(8, 144, 122);
+    background: radial-gradient(circle, rgba(8, 144, 122, 1) 0%, rgba(12, 180, 153, 1) 28%, rgba(7, 238, 205, 1) 66%);
+    padding: 3rem;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+#mainDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+    width: 250px;
+    margin: 0.2rem;
+    padding: 10px;
+}
+
+textarea {
+    width: 250px;
+    height: 100px;
+    margin: 0.5rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+button {
+    width: 250px;
+    height: 30px;
+    background-color: aquamarine;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+}
+
+#masonryContainer {
+    padding: 1.5em;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ul {
+    columns: 1;
+/* margin: 1.5em auto;
+max-width: 768px; */
+    /* column-count: 4; */
+column-gap: 10px;
+padding-left: 0;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* margin-left: 1rem; */
+    /* margin-top: 1rem;
+    flex-wrap: wrap;  */
+}
+
+li {
+
+    display: inline-block;
+    margin: 0 0 1.5em;
+    width: 100%;
+vertical-align: top;
+margin-bottom: 10px;
+    /*list-style-type: none; */
+    padding: 2rem;
+    /* margin: 1rem; */
+    /* width: 250px; */
+    box-shadow: 0 10px 10px -6px #777;
+    background-color: lightgrey; 
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#greetDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#logOutBtn {
+    width: 100px;
+    height: 30px;
+    background-color: aquamarine;
+    color: #333;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+}
+
+/* ul on large screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+    .masonryContainer {
+      columns: 2;
+    }
+  }
+  
+  /* ul on medium-sized screens */
+  @media only screen and (min-width: 1024px) {
+    .masonryContainer {
+      columns: 4;
+    }
+  }
+  
+  /* ul on small screens */
+  @media only screen and (max-width: 767px) and (min-width: 540px) {
+    .ul {
+      column-count: 2;
+    }
+  }
