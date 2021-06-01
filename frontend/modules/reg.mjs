@@ -26,7 +26,7 @@ export function reg() {
     }
     console.log(newUser);
 
-    fetch('http://localhost:3000/users/reg', {
+    fetch('https://stinas-diary.herokuapp.com/users/reg', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

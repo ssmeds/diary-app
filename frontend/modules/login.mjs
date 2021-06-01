@@ -14,7 +14,7 @@ export function login() {
     userPass: userPass
   }
 
-  fetch('http://localhost:3000/users/login', {
+  fetch('https://stinas-diary.herokuapp.com/users/login', {
       method: 'post',
       headers: {
         'Content-Type': 'application/json'

@@ -41,7 +41,7 @@ export function diary(user) {
   userGreetingDiv.appendChild(logOutBtn);
 
   function fetchNew() {
-    fetch('http://localhost:3000/notes')
+    fetch('https://stinas-diary.herokuapp.com/notes')
       .then(res => res.json())
       .then(notes => {
         console.log(notes);
@@ -72,7 +72,7 @@ export function diary(user) {
     };
 
     console.log(diary);
-    fetch('http://localhost:3000/notes/add', {
+    fetch('https://stinas-diary.herokuapp.com/notes/add', {
         method: "POST",
         headers: {
           "Content-Type": "application/json"
